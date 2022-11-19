@@ -1,3 +1,4 @@
+
 public class MainApp{
 
 		String message="Jenkins email notification" ;
@@ -6,8 +7,9 @@ public class MainApp{
 			MainApp map=new MainApp();
 			
 			System.out.println("This is Java Jenkins Demo");
-
-			System.out.println("Message : "+map.message);
+		
+			//Applied toUpperCase() method to the String value
+			System.out.println("Message : "+map.message.toUpperCase());
 		}
 
 }
