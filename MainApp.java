@@ -10,10 +10,6 @@ public class MainApp{
 		
 			//Applied toUpperCase() method to the String value
 			System.out.println("Message : "+map.message.toUpperCase());
-			
-			//creating a Product instance
-			Product product=new Product("Samsung M32",13999.00);
-			System.out.println(product);
 		}
 
 }
