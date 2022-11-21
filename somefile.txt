@@ -1,0 +1,2 @@
+file added to branch 'git-new-branch' >> somefile.txt
+
