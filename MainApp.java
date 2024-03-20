@@ -10,6 +10,8 @@ public class MainApp{
 		
 			//Applied toUpperCase() method to the String value
 			System.out.println("Message : "+map.message.toUpperCase());
+
+			System.out.println("One more line added");
 		}
 
 }
