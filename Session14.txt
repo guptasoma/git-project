@@ -1,0 +1,161 @@
+GIT
+Download site: https://git-scm.com/downloads
+
+Is an example of distributed version control system
+
+Create a folder named say "git-project".
+
+Download and install the git bash shell
+Create a GitHub account
+Create a repository on the GitHub platform. 
+
+git remote add origin https://github.com/guptasoma/git-project.git
+
+Staging Area is the area just before commit.
+
+When you commit, the files are committed to the local repository.
+
+What is the use of git clone?
+I want to get the git repository in my another device to continue my task.
+
+Why shall I try out git pull command before git push command?
+Git pull allows to fetch all the commits done by the other contributors on the same project before sharing yours.
+
+What is the use of .gitignore file?
+I have certain files in my project which need not be pushed to the remote repository like log files, database credentials, or IDE specific files.
+
+
+git-project (One)
+
+friendPC\git-project (Two)
+
+
+
+
+
+
+Maven
+Download site: https://maven.apache.org/download.cgi
+
+Is an example of build automation tool
+
+SYSTEM VARIABLE
+
+M2_HOME :  D:\apps\apache-maven-3.8.6
+
+CHECK IF ALREADY THERE IS A "PATH" SYSTEM VARIABLE
+If YES, EDIT THE PATH VARIABLE	
+If NO, CLICK "NEW"
+	path: D:\apps\apache-maven-3.8.6\bin
+
+Click [OK] three times to close all the open dialog boxes
+
+Open command prompt and write mvn -version
+
+1. Manually use mvn utility
+
+mvn archetype:generate -DgroupId=com.example -DartifactId=my-project -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+groupId [com.example]
+artifactId [my-project]
+
+
+The default structure to be followed for a Java project is
+a) src/main/java
+	the java classes with the logic
+
+b) src/test/java
+	the java classes with testing logic (JUnit testing)
+
+c) Edit the pom.xml
+  <properties>
+	<java.version>11</java.version>
+	<maven.compiler.source>11</maven.compiler.source>
+     	<maven.compiler.target>11</maven.compiler.target>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+d) Modify the App.java file
+public class App 
+{
+    public int add(int a,int b){		
+	return a+b;
+    }
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+	App app=new App();
+	System.out.println("Result= "+app.add(5,6));
+    }
+
+}
+
+e) Modify the AppTest.java file
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+
+public class AppTest {
+
+@Test
+public void test1(){
+	App app=new App();
+	assertEquals(5,app.add(2,3));
+}
+
+@Test
+public void test2(){
+	App app=new App();
+	assertEquals(1,app.add(-2,3));
+}
+
+}
+
+f) Run the command from the command prompt
+
+cd my-project
+
+mvn package
+
+It will take some time to complete and give the Build status.
+
+g) Try the command
+java -cp target/my-project-1.0-SNAPSHOT.jar com.example.App
+
+------------------------------
+1. By using mvn generate command we manually created a Java project with simple archetype.
+2. We modified the pom.xml file to download whatever dependencies we required and told maven about our jdk version.
+
+The default location of the local repository is
+	C:\Users\<<un>>\.m2\repository
+
+3. We then edited the App.java and AppTest.java files
+4. We tried the command mvn package or mvn clean package to build the project and generate the jar file.
+5. Finally, we executed the jar file using java command
+
+What does mvn package command do?
+validate
+compile
+test
+package ( The .jar file gets added to the target folder)
+
+2. Create an Eclipse Maven project 
+
+
+
+
+
+
+
+
+
+
+
+
+
