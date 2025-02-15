@@ -1,3 +1,5 @@
 This is my file with one single line.
 
 This line is added new to the file.
+
+This line is now being added by user "two".
