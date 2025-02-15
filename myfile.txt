@@ -6,3 +6,6 @@ This line is added new to the file.
 
 This line is now being added by user "two".
 >>>>>>> fe4ba0d75ded52f999d3c841b744ab9191d4c6bf
+
+
+I add thus line here.
