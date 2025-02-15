@@ -2,4 +2,7 @@ This is my file with one single line.
 
 This line is added new to the file.
 
-So I am adding new line as "user one".
+<<<<<<< HEAD
+
+This line is now being added by user "two".
+>>>>>>> fe4ba0d75ded52f999d3c841b744ab9191d4c6bf
